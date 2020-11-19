@@ -2,7 +2,7 @@
 Projeto desenvolvido para disciplina de Serverless Architecture da FIAP
 
 
-##Arquitetura
+## Arquitetura
 
 ![diagrama](trip-serverless-diagram.png)
 
