@@ -1,0 +1,10 @@
+br\com\fiap\handler\CreateTripRecord.class
+br\com\fiap\model\HandlerRequest.class
+br\com\fiap\model\HandlerResponse.class
+br\com\fiap\handler\GetTripsByPeriod.class
+br\com\fiap\model\Trip.class
+br\com\fiap\handler\GetTripsByCountry.class
+br\com\fiap\repository\TripRepository.class
+br\com\fiap\dao\DynamoDBManager.class
+br\com\fiap\handler\GetTripsByCity.class
+br\com\fiap\model\HandlerResponse$Builder.class

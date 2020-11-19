@@ -1,0 +1,9 @@
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\repository\TripRepository.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\handler\GetTripsByCountry.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\handler\CreateTripRecord.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\model\HandlerResponse.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\dao\DynamoDBManager.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\handler\GetTripsByPeriod.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\handler\GetTripsByCity.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\model\HandlerRequest.java
+C:\Users\Jonathas\eclipse-workspace\fiap\aws-serverless-trip\src\main\java\br\com\fiap\model\Trip.java
