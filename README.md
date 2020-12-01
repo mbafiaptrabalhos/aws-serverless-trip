@@ -43,6 +43,8 @@ mvn install
 1. Inicia DynamoDB Local em um container Docker. `docker run -p 8000:8000 -v $(pwd)/local/dynamodb:/data/ amazon/dynamodb-local -jar DynamoDBLocal.jar -sharedDb -dbPath /data`
 2. Cria a tabela DynamoDB. `aws dynamodb create-table --table-name trip --attribute-definitions AttributeName=country,AttributeType=S AttributeName=dateTrip,AttributeType=S AttributeName=city,AttributeType=S --key-schema AttributeName=country,KeyType=HASH AttributeName=dateTrip,KeyType=RANGE --local-secondary-indexes 'IndexName=cityIndex,KeySchema=[{AttributeName=country,KeyType=HASH},{AttributeName=city,KeyType=RANGE}],Projection={ProjectionType=ALL}' --billing-mode PAY_PER_REQUEST --endpoint-url http://localhost:8000`
 
+**OBS.** É necessário colocar permissão de escrita e leitura na pasta local/dynamodb.
+
 Se a tabela existe, você pode deletar: `aws dynamodb delete-table --table-name trip --endpoint-url http://localhost:8000`
 
 3. Inicia o SAM local API.
