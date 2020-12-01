@@ -64,11 +64,11 @@ Exemplo de body:
         "reason": "Trabalho"
 }
 
-** Get por país: **
+**Get por país:**
 http://localhost:3000/Prod/trips/Brasil 
 
-** Get por período: **
+**Get por período:**
 http://localhost:3000/Prod/trips?starts=2021/11/07&ends=2021/11/07
 
-** Get por cidade: **
+**Get por cidade:**
 http://localhost:3000/Prod/trips/Brasil/city?city=Rio de Janeiro
