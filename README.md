@@ -1,3 +1,4 @@
+
 # aws-serverless-trip
 Projeto desenvolvido para disciplina de Serverless Architecture da FIAP
 
@@ -51,20 +52,24 @@ Se a tabela existe, você pode deletar: `aws dynamodb delete-table --table-name 
  - No Mac: `sam local start-api --env-vars src/test/resources/test_environment_mac.json`
  - No Windows: `sam local start-api --env-vars src/test/resources/test_environment_windows.json`
  - No Linux: `sam local start-api --env-vars src/test/resources/test_environment_linux.json`
- 
-### Depois de rodar todos os comandos com sucesso, você poderá testar localmente os endpoints:
+
+### Endpoints para teste local
+
+ Depois de rodar todos os comandos com sucesso, você poderá testar localmente os endpoints:
 
 **Post:**
 http://localhost:3000/Prod/trips
 
-Exemplo de body:
+Exemplo body:
 
+```bash
 {
         "country": "Brasil",
         "dateTrip": "2021/11/07",
         "city": "Sao Paulo",
         "reason": "Trabalho"
 }
+```
 
 **Get por país:**
 http://localhost:3000/Prod/trips/Brasil 
@@ -98,6 +103,6 @@ sam package \
 ```bash
 sam deploy \
     --template-file packaged.yaml \
-    --stack-name study-datalake \
+    --stack-name trip-datalake \
     --capabilities CAPABILITY_IAM
 ```
