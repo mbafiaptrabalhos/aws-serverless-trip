@@ -1,6 +1,18 @@
 # aws-serverless-trip
 Projeto desenvolvido para disciplina de Serverless Architecture da FIAP
 
+## Integrantes
+
+ - Caroline Nascimento de Oliveira - 337401
+
+- Harold Isaac Campero Stoffers Murillo - 337233
+
+- Jonathas da Cruz Garcia - 338900
+
+- Renato Santana Brito - 337364
+
+- Victor Tokudo Kiam - 337385
+
 
 ## Diagrama arquitetura
 
