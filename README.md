@@ -72,3 +72,30 @@ http://localhost:3000/Prod/trips?starts=2021/11/07&ends=2021/11/07
 
 **Get por cidade:**
 http://localhost:3000/Prod/trips/Brasil/city?city=Sao Paulo
+
+## Empacotamento e implantação
+
+**1-** Crie um bucket no S3:
+
+```bash
+export BUCKET_NAME=my_cool_new_bucket
+aws s3 mb s3://$BUCKET_NAME
+```
+
+**2-** Execute o seguinte comando para empacotar o lambda para o S3:
+
+```bash
+sam package \
+    --template-file template.yaml \
+    --output-template-file packaged.yaml \
+    --s3-bucket $BUCKET_NAME
+```
+
+**3-** Execute o comando para criar um Cloudformation Stack e implantar seus recursos SAM:
+
+```bash
+sam deploy \
+    --template-file packaged.yaml \
+    --stack-name study-datalake \
+    --capabilities CAPABILITY_IAM
+```
