@@ -50,9 +50,9 @@ Se a tabela existe, você pode deletar: `aws dynamodb delete-table --table-name 
  - No Windows: `sam local start-api --env-vars src/test/resources/test_environment_windows.json`
  - No Linux: `sam local start-api --env-vars src/test/resources/test_environment_linux.json`
  
-### Depois de rodar todos os comandos com sucesso, você poderá testar local os endpoints:
+### Depois de rodar todos os comandos com sucesso, você poderá testar localmente os endpoints:
 
-** Post: **
+**Post:**
 http://localhost:3000/Prod/trips
 
 Exemplo de body:
