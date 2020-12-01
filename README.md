@@ -50,5 +50,25 @@ Se a tabela existe, você pode deletar: `aws dynamodb delete-table --table-name 
  - No Windows: `sam local start-api --env-vars src/test/resources/test_environment_windows.json`
  - No Linux: `sam local start-api --env-vars src/test/resources/test_environment_linux.json`
  
- 
+### Depois de rodar todos os comandos com sucesso, você poderá testar local os endpoints:
 
+** Post: **
+http://localhost:3000/Prod/trips
+
+Exemplo de body:
+
+{
+        "country": "Brasil",
+        "dateTrip": "2021/11/07",
+        "city": "Sao Paulo",
+        "reason": "Trabalho"
+}
+
+** Get por país: **
+http://localhost:3000/Prod/trips/Brasil 
+
+** Get por período: **
+http://localhost:3000/Prod/trips?starts=2021/11/07&ends=2021/11/07
+
+** Get por cidade: **
+http://localhost:3000/Prod/trips/Brasil/city?city=Rio de Janeiro
